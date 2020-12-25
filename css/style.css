@@ -1,0 +1,369 @@
+
+/* =============== */
+/* BASIC SETUP */
+/* =============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+section {
+    padding: 65px 0;
+}
+img {
+    max-width: 100%;
+}
+h4 {
+    font-size: 22px;
+}
+
+
+.slider-section {
+    background: url(img/mbr-10.jpg) no-repeat center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+
+}
+.slider-section::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.7);
+    z-index: -1;
+}
+.slider-section .button-get {
+    font-weight: 600;
+    transition: 0.5s;
+}
+.slider-section .button-get:hover {
+    background-color: #fff;
+    color: #6278df;
+    border-color: #657be0;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.button-set {
+    padding: 30px;
+}
+
+/* ---------Header Section ------*/
+.nav-header .navbar-brand {
+    font-size: 25px;
+    font-weight: 500;
+}
+.nav-header span {
+    display: inline-block;
+    background: #6278df;
+    height: 43px;
+    -webkit-column-width: 39px;
+    border-radius: 10px;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+.john-item .nav-link {
+    margin-left: 30px;
+}
+
+.slider-caption h2 {
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.slider-caption h4 {
+    margin-bottom: 40px;
+
+}
+.counter-number-item {
+    text-align: center;
+}
+.counter-number-item .h2 {
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.about-section {
+    background: #f7f9ff;
+
+}
+.about-section .about-text {
+    margin-top: 20%;
+    text-justify: auto;
+}
+.about-section .lead {
+    font-size: 18px;
+}
+.feature-section {
+    text-align: center;
+}
+.feature-section .text-muted {
+    font-size: 25px;
+}
+.feature-items {
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    transition: all 0.3s;
+}   
+.left-img-section {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.right-text-section {
+    width: 60%;
+    padding: 30px;
+}
+.left-img-section img {
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -80px;
+    border-radius: 10px;
+}
+.feature-items .text-muted {
+    font-size: 14px;
+}
+
+.portfolio-iteam a {
+    position: relative;
+    display: block;
+}
+.portfolio-iteam a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 120, 223, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+
+}
+.portfolio-iteam:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------using section---- */
+.using-section {
+    background-color: #F7F9FF;
+}
+.using-section .text-muted {
+    font-size: 22px;
+
+}
+.pricing-item {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    border-radius: 5px;
+}
+.pricing-item h1 {}
+.pricing-item h5 {}
+.pricing-item ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 45px;
+}
+.pricing-item ul li { 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #777;
+}
+.pricing-item ul li span {
+    color: #657be0;
+    font-size: 25px;
+    font-weight: bold;
+    width: 40px;
+    display: inline-block;
+}
+.pricing-item button {}
+.pricing-item-button a {
+    border-color: #657be0;
+    border-width: 2px;
+    color: #657be0;
+    padding: 15px 80px;
+    font-size: 22px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+
+/*-------Feedback section---- */
+
+
+.feedback-section .textfront {
+    font-size: 30px;
+    
+}
+.textsecond {
+    font-size: 20px;
+}
+.feedback-section .sign {
+    font-size: 80px;
+    color: #F0F0F0;
+}
+.feedback-section .name {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0;
+    
+}
+.feedback-section .position {
+    font-size: 18px;
+    text-align: left;
+}
+
+.feedback-section .author-info {
+    width: 230px;
+    margin: auto;
+}
+.feedback-section .author-info img {
+    width: 90px;
+    margin-right: 20px;
+}
+
+/*-------Team section---- */
+
+.team-section {
+    background-color: #F7F9FF;
+}
+.about-item {
+    margin-top: 90px;
+}
+.about-item .card{}
+.about-item .card img {
+    width: 130px;
+    height: auto;
+    margin-top: -70px;
+    margin-left: 15px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.about-item .button2:hover {
+    background-color: #465052;
+    color: #fff;
+}
+
+
+/*------Form section---- */
+
+
+.contact-form .card {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    padding: 40px;
+
+
+}
+.contact-form .card h4 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.contact-form .card .email {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+
+}
+.contact-form .card .name {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    margin-right: 10px;
+
+}
+.contact-form .card .number {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+    padding-left: 10px;
+
+}
+.contact-form .card .message {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+
+}
+.contact-form .card .button {
+    background-color: #6278df;
+    border-color: #6278df;
+    color: #ffffff;
+    border-width: 2px;
+    padding: 8px 60px;
+    font-size: 22px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    transition: 0.5s;
+}
+.contact-form .card .button:hover {
+    background-color: black;
+}
+
+
+
+/*-------Responsive section---- */
+
+@media (min-width: 992px) {
+    .section {
+        padding: 60px 0;
+
+    }
+    .about-section .about-text {
+        margin-top: 40%;
+    }
+    .slider-section .mail-bar {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .section {
+        padding: 50px 0;
+    }
+    .about-section .about-text {
+        margin-top: 5%;
+    }
+    .slider-section .mail-bar {
+        margin-bottom: 20px;
+    }
+    .slider-section .button-set {
+        padding: 20px;
+    }
+}  
+@media (min-width: 576px) {
+    .section {
+        padding: 20px 0;
+
+    }
+    .slider-section .mail-bar {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
